@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3b6ed1b80d914e5696bb5851ea318fc5" Name="Diagram1">
+        <EntityTypeShape EntityType="FAAToolModel.Admin" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.Amount" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.Application" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.Budget" Width="1.5" PointX="8.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.Committee" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.Criterion" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.EvidenceDocument" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.Faculty" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.FinancialAid" Width="1.5" PointX="9.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.grader" Width="1.5" PointX="6" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.MeritBase" Width="1.5" PointX="3" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.Policy" Width="1.5" PointX="7.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.Session" Width="1.5" PointX="10.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.Student" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.Suggestion" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.sysdiagram" Width="1.5" PointX="8.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FAAToolModel.User" Width="1.5" PointX="10.75" PointY="10.75" IsExpanded="true" />
+        <AssociationConnector Association="FAAToolModel.FK__Applicati__stude__25A691D2" ManuallyRouted="false" />
+        <AssociationConnector Association="FAAToolModel.FK__EvidenceD__Appli__41EDCAC5" ManuallyRouted="false" />
+        <AssociationConnector Association="FAAToolModel.FK__Suggestio__Appli__44952D46" ManuallyRouted="false" />
+        <AssociationConnector Association="FAAToolModel.FK__Committee__Facul__3587F3E0" ManuallyRouted="false" />
+        <AssociationConnector Association="FAAToolModel.FK__Suggestio__Commi__43A1090D" ManuallyRouted="false" />
+        <AssociationConnector Association="FAAToolModel.FK__Criteria__policy__3D7E1B63" ManuallyRouted="false" />
+        <AssociationConnector Association="FAAToolModel.FK__graders__Faculty__31B762FC" ManuallyRouted="false" />
+        <AssociationConnector Association="FAAToolModel.FK__graders__student__269AB60B" ManuallyRouted="false" />
+        <AssociationConnector Association="FAAToolModel.FK__MeritBase__stude__184C96B4" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

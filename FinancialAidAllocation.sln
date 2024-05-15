@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialAidAllocation", "FinancialAidAllocation\FinancialAidAllocation.csproj", "{2AD6F692-C242-4203-BC38-7186FB695980}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AD6F692-C242-4203-BC38-7186FB695980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD6F692-C242-4203-BC38-7186FB695980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD6F692-C242-4203-BC38-7186FB695980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD6F692-C242-4203-BC38-7186FB695980}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C356B5C7-84A3-4791-9AFE-5EA93218CDC6}
+	EndGlobalSection
+EndGlobal
