@@ -105,9 +105,10 @@
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="facultyId" Type="int" />
           <Property Name="session" Type="varchar" MaxLength="30" />
-          <Property Name="feedback" Type="int" />
+          <Property Name="feedback" Type="varchar" MaxLength="10" />
           <Property Name="studentId" Type="int" />
           <Property Name="status" Type="varchar" MaxLength="15" />
+          <Property Name="comment" Type="varchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="MeritBase">
           <Key>
@@ -460,9 +461,10 @@
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="facultyId" Type="Int32" />
           <Property Name="session" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="feedback" Type="Int32" />
+          <Property Name="feedback" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="studentId" Type="Int32" />
           <Property Name="status" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="comment" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Faculty" Relationship="Self.FK__graders__Faculty__31B762FC" FromRole="graders" ToRole="Faculty" />
           <NavigationProperty Name="Student" Relationship="Self.FK__graders__student__269AB60B" FromRole="graders" ToRole="Student" />
         </EntityType>
@@ -827,6 +829,7 @@
                 <ScalarProperty Name="feedback" ColumnName="feedback" />
                 <ScalarProperty Name="studentId" ColumnName="studentId" />
                 <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="comment" ColumnName="comment" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

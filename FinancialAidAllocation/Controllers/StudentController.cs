@@ -265,10 +265,11 @@ namespace FinancialAidAllocation.Controllers
         {
             try
             {
-                var count = db.Applications.Where(c => c.studentId == 1d).FirstOrDefault();
+                var session = db.Sessions.OrderByDescending(sess => sess.id).FirstOrDefault();
+                var count = db.Applications.Where(c => c.studentId == 1d && c.session==session.session1).FirstOrDefault();
                 if (count != null)
                 {
-                    var result = db.Applications.Where(ap=>ap.studentId==id).Join(
+                    var result = db.Applications.Where(ap=>ap.studentId==id && ap.session == session.session1).Join(
                     db.FinancialAids,
                     a => a.applicationID,
                     f => f.applicationId,

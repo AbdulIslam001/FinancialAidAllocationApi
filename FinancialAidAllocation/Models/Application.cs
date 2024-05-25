@@ -34,11 +34,11 @@ namespace FinancialAidAllocation.Models
         public string guardian_contact { get; set; }
         public string jobtitle { get; set; }
         public string salary { get; set; }
-
         [JsonIgnore]
         public virtual Student Student { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         [JsonIgnore]
+
         public virtual ICollection<EvidenceDocument> EvidenceDocuments { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         [JsonIgnore]

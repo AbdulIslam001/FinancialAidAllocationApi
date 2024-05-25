@@ -18,8 +18,8 @@ namespace FinancialAidAllocation.Controllers
         {
             try
             {
-    
-                var result = db.Applications
+                var session = db.Sessions.OrderByDescending(sess => sess.id).FirstOrDefault();
+                var result = db.Applications.Where(a=>a.session==session.session1)
             .GroupJoin(
                 db.Suggestions.Where(s => s.committeeId == id),
         application => application.applicationID,

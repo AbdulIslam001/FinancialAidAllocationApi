@@ -18,11 +18,12 @@ namespace FinancialAidAllocation.Models
         public int id { get; set; }
         public Nullable<int> facultyId { get; set; }
         public string session { get; set; }
-        public Nullable<int> feedback { get; set; }
+        public string feedback { get; set; }
         public Nullable<int> studentId { get; set; }
         public string status { get; set; }
-
+        public string comment { get; set; }
         [JsonIgnore]
+
         public virtual Faculty Faculty { get; set; }
         [JsonIgnore]
         public virtual Student Student { get; set; }

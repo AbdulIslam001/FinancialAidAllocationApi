@@ -22,6 +22,7 @@ namespace FinancialAidAllocation.Models
         public string status { get; set; }
         public string amount { get; set; }
         [JsonIgnore]
+
         public virtual Application Application { get; set; }
         [JsonIgnore]
         public virtual Committee Committee { get; set; }
